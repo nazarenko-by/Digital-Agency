@@ -174,12 +174,14 @@ body {
 }
 .mobile-nav:hover .mobile-menu {
   opacity: 1;
+  pointer-events: all;
   transition: 1s;
 }
 
 .mobile-menu {
   position: absolute;
   opacity: 0;
+  pointer-events: none;
   background-color: #60606e;
   z-index: 200;
   text-transform: uppercase;
