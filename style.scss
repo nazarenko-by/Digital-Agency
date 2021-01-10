@@ -1,7 +1,7 @@
 @import "./grid";
 
 $conteiner-sm: 720px;
-$conteiner-cd: 1004px;
+$conteiner-md: 1004px;
 $conteiner-lg: 1170px;
 $montserrat: 'Montserrat',
 sans-serif;
@@ -52,7 +52,91 @@ body {
     justify-content: flex-end;
 }
 
+.desktop-menu {
+    &>ul {
+        display: flex;
+        justify-content: space-between;
+
+        &>li {
+            padding: 0 7px;
+
+            &:hover {
+                &>a::after {
+                    opacity: 1;
+                    top: -10px;
+                    transition: all .2s ease-in-out;
+                }
+            }
+
+            &>a {
+                height: 30px;
+                position: relative;
+                display: block;
+                color: #60606e;
+                font-size: 12px;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    height: 1px;
+                    width: 50%;
+                    background-color: #60606e;
+                    content: "";
+                    opacity: 0;
+                    transition: all .2s ease-in-out;
+                }
+
+            }
+        }
+    }
+
+}
+
+.first-level {
+    position: relative;
+    display: block;
+
+    &:hover{
+        .second-level {
+            display: block;
+        }
+    }
+
+    .second-level {
+        display: none;
+        background-color: #60606e;
+        position: absolute;
+        width: 200px;
+        top: 30px;
+
+        .second-level-dark {
+            background-color: #585866;
+        }
+
+        li{
+            padding: 12px 20px;
+            &:hover{
+                background-color: #404051;
+            }
+
+        }
+
+        a {
+            color: white;
+            font-size: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
 .mobile-nav {
+    display: none;
+
     &:hover {
         .menu-icon .line {
             width: 30px;
@@ -77,6 +161,7 @@ body {
     left: 0px;
     width: 100%;
     justify-content: center;
+
     a {
         color: white;
         text-decoration: none;
@@ -110,8 +195,39 @@ body {
     transition: all .2s ease-in-out;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1023px) {
+    .mobile-nav {
+        display: block;
+    }
+
     .desktop-menu {
         display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .conteiner {
+        width: $conteiner-sm;
+    }
+}
+
+@media(min-width: 1024px) {
+    .conteiner {
+        width: $conteiner-md;
+    }
+}
+
+@media(min-width: 1200px) {
+    .conteiner {
+        width: $conteiner-lg;
+    }
+
+    .desktop-menu {
+        ul {
+            li {
+                padding: 0 10px;
+            }
+        }
+
     }
 }
