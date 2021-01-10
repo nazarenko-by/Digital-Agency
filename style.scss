@@ -6,6 +6,7 @@ $conteiner-lg: 1170px;
 $light-dark-grey:#585866;
 $grey:#60606e;
 $dark-grey:#404051;
+$turquoise:#7beec7;
 $montserrat: 'Montserrat',
 sans-serif;
 $open-sans: 'Open Sans',
@@ -31,11 +32,7 @@ body {
     margin-right: -15px;
     margin-left: -15px;
     display: flex;
-
-}
-
-.row {
-    flex-direction: row;
+    flex-direction: column;
 }
 
 [class*='col-'] {
@@ -50,6 +47,10 @@ body {
     position: sticky;
     top: 0;
     z-index: 200;
+
+    .row {
+        flex-direction: row;
+    }
 }
 
 .logo {
@@ -253,7 +254,7 @@ body {
         text-transform: uppercase;
         font-size: 18px;
         color: $grey;
-        background-color: #7beec7;
+        background-color: $turquoise;
     }
 
     .big-title {
@@ -276,7 +277,25 @@ body {
 
 .text {
     color: $grey;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.button {
+    color: white;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: $turquoise;
+    padding: 20px 40px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
 }
 
 .slider-dots {
@@ -300,6 +319,56 @@ body {
     background-color: $dark-grey;
 }
 
+.history-img {
+    margin: 30px 0;
+    width: 100%;
+    align-self: center;
+}
+
+.history-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .button{
+        align-self: flex-end;
+    }
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text {
+    z-index: 100;
+    font-size: 30px;
+    font-family: $montserrat;
+    color: $grey;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.title-box {
+    z-index: 0;
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    background-color: $turquoise;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 767px){
+   .title{
+        max-width: 300px;
+    } 
+}
 
 @media(max-width: 1023px) {
     .mobile-nav {
@@ -309,11 +378,16 @@ body {
     .desktop-menu {
         display: none;
     }
+    
 }
 
 @media(min-width: 768px) {
     .conteiner {
         width: $conteiner-sm;
+    }
+
+    .row {
+        flex-direction: row;
     }
 }
 
