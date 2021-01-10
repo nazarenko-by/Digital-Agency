@@ -107,7 +107,7 @@ body {
 
     .second-level {
         display: none;
-        background-color: #60606e;
+        
         position: absolute;
         width: 200px;
         top: 30px;
@@ -117,7 +117,9 @@ body {
         }
 
         li{
+            background-color: #60606e;
             padding: 12px 20px;
+            transition: all .2s ease-in-out;
             &:hover{
                 background-color: #404051;
             }

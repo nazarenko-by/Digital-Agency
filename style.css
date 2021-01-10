@@ -216,7 +216,6 @@ body {
 }
 .first-level .second-level {
   display: none;
-  background-color: #60606e;
   position: absolute;
   width: 200px;
   top: 30px;
@@ -225,7 +224,9 @@ body {
   background-color: #585866;
 }
 .first-level .second-level li {
+  background-color: #60606e;
   padding: 12px 20px;
+  transition: all 0.2s ease-in-out;
 }
 .first-level .second-level li:hover {
   background-color: #404051;
