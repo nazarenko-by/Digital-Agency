@@ -44,7 +44,7 @@ body {
 }
 
 .header {
-    background-color:$light-dark-grey;
+    background-color: $light-dark-grey;
     display: flex;
     padding: 10px 0;
     position: sticky;
@@ -52,7 +52,7 @@ body {
     z-index: 200;
 }
 
-.logo{
+.logo {
     padding: 15px 0;
     font-family: $montserrat;
     color: whitesmoke;
@@ -209,6 +209,7 @@ body {
 
 .menu-icon {
     padding-top: 15px;
+
     .line:first-child {
         width: 30px;
     }
@@ -230,7 +231,7 @@ body {
     transition: all .2s ease-in-out;
 }
 
-.slider{
+.slider {
     position: relative;
     height: 850px;
     background: url(images/slider.png) no-repeat;
@@ -255,7 +256,7 @@ body {
         background-color: #7beec7;
     }
 
-    .big-title{
+    .big-title {
         font-family: $montserrat;
         text-transform: uppercase;
         color: $grey;
@@ -263,17 +264,17 @@ body {
         border: $grey solid 10px;
         padding: 10px 20px;
         text-align: center;
-        line-height:50px;
+        line-height: 50px;
     }
 
-    p{
+    p {
         text-align: center;
-        padding-top: 30px ;
+        padding-top: 30px;
     }
 
 }
 
-.text{
+.text {
     color: $grey;
     font-size: 16px;
 }
@@ -282,7 +283,8 @@ body {
     margin-top: 40px;
     text-align: center;
 }
-.slider-dots_item{
+
+.slider-dots_item {
     cursor: pointer;
     height: 12px;
     width: 12px;
@@ -292,9 +294,10 @@ body {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active,
 .slider-dots_item:hover {
-    background-color:$dark-grey;
+    background-color: $dark-grey;
 }
 
 
