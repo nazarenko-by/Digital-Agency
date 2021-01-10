@@ -3,6 +3,9 @@
 $conteiner-sm: 720px;
 $conteiner-md: 1004px;
 $conteiner-lg: 1170px;
+$light-dark-grey:#585866;
+$grey:#60606e;
+$dark-grey:#404051;
 $montserrat: 'Montserrat',
 sans-serif;
 $open-sans: 'Open Sans',
@@ -41,15 +44,27 @@ body {
 }
 
 .header {
+    background-color:$light-dark-grey;
     display: flex;
-    margin: 40px 0;
+    padding: 10px 0;
     position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+.logo{
+    padding: 15px 0;
+    font-family: $montserrat;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 .menu {
     font-family: $montserrat;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .desktop-menu {
@@ -63,16 +78,16 @@ body {
             &:hover {
                 &>a::after {
                     opacity: 1;
-                    top: -10px;
+                    top: 5px;
                     transition: all .2s ease-in-out;
                 }
             }
 
             &>a {
-                height: 30px;
+                padding: 15px 0;
                 position: relative;
                 display: block;
-                color: #60606e;
+                color: whitesmoke;
                 font-size: 12px;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -83,7 +98,7 @@ body {
                     left: 0;
                     height: 1px;
                     width: 50%;
-                    background-color: #60606e;
+                    background-color: whitesmoke;
                     content: "";
                     opacity: 0;
                     transition: all .2s ease-in-out;
@@ -111,16 +126,16 @@ body {
             top: 30px;
 
             .second-level-dark {
-                background-color: #585866;
+                background-color: $light-dark-grey;
             }
 
             li {
-                background-color: #60606e;
+                background-color: $grey;
                 padding: 12px 20px;
                 transition: all .2s ease-in-out;
 
                 &:hover {
-                    background-color: #404051;
+                    background-color: $dark-grey;
                 }
 
             }
@@ -157,18 +172,19 @@ body {
     position: absolute;
     opacity: 0;
     pointer-events: none;
-    background-color: #60606e;
+    background-color: $grey;
     z-index: 200;
     text-transform: uppercase;
-    top: 50px;
+    top: 65px;
     left: 0px;
     width: 100%;
     justify-content: center;
 
     li {
         &:hover {
-            background-color: #404051;
-            .second-level{
+            background-color: $dark-grey;
+
+            .second-level {
                 display: block;
             }
         }
@@ -192,6 +208,7 @@ body {
 
 
 .menu-icon {
+    padding-top: 15px;
     .line:first-child {
         width: 30px;
     }
@@ -209,9 +226,77 @@ body {
 
 .line {
     height: 1px;
-    background-color: #60606e;
+    background-color: whitesmoke;
     transition: all .2s ease-in-out;
 }
+
+.slider{
+    position: relative;
+    height: 850px;
+    background: url(images/slider.png) no-repeat;
+    background-size: cover;
+
+}
+
+.slider-info {
+    height: 750px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .small-title {
+        padding: 10px 20px;
+        font-family: $montserrat;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $grey;
+        background-color: #7beec7;
+    }
+
+    .big-title{
+        font-family: $montserrat;
+        text-transform: uppercase;
+        color: $grey;
+        font-size: 38px;
+        border: $grey solid 10px;
+        padding: 10px 20px;
+        text-align: center;
+        line-height:50px;
+    }
+
+    p{
+        text-align: center;
+        padding-top: 30px ;
+    }
+
+}
+
+.text{
+    color: $grey;
+    font-size: 16px;
+}
+
+.slider-dots {
+    margin-top: 40px;
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: $grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color:$dark-grey;
+}
+
 
 @media(max-width: 1023px) {
     .mobile-nav {
