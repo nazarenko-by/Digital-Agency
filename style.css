@@ -206,32 +206,31 @@ body {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-
-.first-level {
+.desktop-menu .first-level {
   position: relative;
   display: block;
 }
-.first-level:hover .second-level {
+.desktop-menu .first-level:hover .second-level {
   display: block;
 }
-.first-level .second-level {
+.desktop-menu .first-level .second-level {
   display: none;
   position: absolute;
   width: 200px;
   top: 30px;
 }
-.first-level .second-level .second-level-dark {
+.desktop-menu .first-level .second-level .second-level-dark {
   background-color: #585866;
 }
-.first-level .second-level li {
+.desktop-menu .first-level .second-level li {
   background-color: #60606e;
   padding: 12px 20px;
   transition: all 0.2s ease-in-out;
 }
-.first-level .second-level li:hover {
+.desktop-menu .first-level .second-level li:hover {
   background-color: #404051;
 }
-.first-level .second-level a {
+.desktop-menu .first-level .second-level a {
   color: white;
   font-size: 12px;
   text-decoration: none;
@@ -262,13 +261,23 @@ body {
   width: 100%;
   justify-content: center;
 }
-.mobile-menu a {
+.mobile-menu li:hover {
+  background-color: #404051;
+}
+.mobile-menu li:hover .second-level {
+  display: block;
+}
+.mobile-menu li a {
   color: white;
   text-decoration: none;
   display: flex;
   justify-content: center;
   padding: 15px 0;
   font-size: 12px;
+}
+.mobile-menu .second-level {
+  display: none;
+  background-color: #50505f;
 }
 
 .menu-icon .line:first-child {
