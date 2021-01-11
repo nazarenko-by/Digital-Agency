@@ -344,7 +344,7 @@ body {
     line-height: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .title-text::after{
@@ -354,7 +354,70 @@ body {
     width: 70px;
     height: 20px;
     background-color: $turquoise;
-    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.choose-us{
+    .title{
+        margin-top: 100px;
+    }
+    .text{
+        margin-bottom: 50px;
+    }
+    .choose-us-img{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .choose-us-info{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-content: space-around;
+        height: 100%;
+        
+        .choose-us-icon{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .choose-us-info-title{
+            text-align: center;
+            font-family: $montserrat;
+            text-transform: uppercase;
+            font-size: 18px;
+            color: $grey;
+            margin-bottom: 30px;
+        }
+
+        ul{
+            text-align: center;
+            text-transform: uppercase;
+            color: $light-gray;
+            font-size: 14px;
+            
+            li{
+                margin-top: 15px;
+            }
+        }
+    
+    }
+
+    .center-vertical{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+
 }
 
 @media(max-width: 767px){
@@ -402,6 +465,30 @@ body {
         }
     }
 
+    .choose-us{
+        .choose-us-img{
+            margin: 0;
+        }
+
+        .choose-us-info{
+            gap: 0;
+            
+            .choose-us-info-title{
+                text-align: left;
+            }
+
+            ul{
+                text-align: left;
+            }
+
+        .choose-us-icon{
+            justify-content: flex-start;
+        }
+        }
+        
+    }
+    
+
 }
 
 @media(min-width: 1024px) {
@@ -411,6 +498,12 @@ body {
 
     .history{
         margin-top: -320px;
+    }
+
+    .choose-us{
+        .text{
+            margin-bottom: 100px;
+        }
     }
 
 }
