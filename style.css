@@ -415,10 +415,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .title-text {
+  position: relative;
   z-index: 100;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
@@ -426,10 +426,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.title-box {
-  z-index: 0;
+.title-text::after {
+  content: "";
+  z-index: -1;
   position: absolute;
   width: 70px;
   height: 20px;
@@ -458,6 +462,11 @@ body {
 
   .row {
     flex-direction: row;
+  }
+
+  .title-text::after {
+    margin-bottom: -20px;
+    left: 2px;
   }
 
   .history {
