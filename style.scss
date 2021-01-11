@@ -1,16 +1,5 @@
 @import "./grid";
-
-$conteiner-sm: 720px;
-$conteiner-md: 1004px;
-$conteiner-lg: 1170px;
-$light-dark-grey:#585866;
-$grey:#60606e;
-$dark-grey:#404051;
-$turquoise:#7beec7;
-$montserrat: 'Montserrat',
-sans-serif;
-$open-sans: 'Open Sans',
-sans-serif;
+@import "./variables";
 
 * {
     box-sizing: border-box;
@@ -389,12 +378,29 @@ body {
     .row {
         flex-direction: row;
     }
+
+    .history{
+        position: relative;
+        z-index: 120;
+        margin-top: -240px;
+        .history-img{
+            position: relative;
+            top: 25%;
+            transform: translateY(-25%);
+        }
+    }
+
 }
 
 @media(min-width: 1024px) {
     .conteiner {
         width: $conteiner-md;
     }
+
+    .history{
+        margin-top: -320px;
+    }
+
 }
 
 @media(min-width: 1200px) {

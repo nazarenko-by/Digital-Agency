@@ -459,10 +459,25 @@ body {
   .row {
     flex-direction: row;
   }
+
+  .history {
+    position: relative;
+    z-index: 120;
+    margin-top: -240px;
+  }
+  .history .history-img {
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+  }
 }
 @media (min-width: 1024px) {
   .conteiner {
     width: 1004px;
+  }
+
+  .history {
+    margin-top: -320px;
   }
 }
 @media (min-width: 1200px) {
