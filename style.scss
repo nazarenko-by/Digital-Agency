@@ -420,132 +420,152 @@ body {
         align-items: center;
     }
 
-   
+
 
 }
 
-.portfolio{
+.portfolio {
     padding: 150px 0;
-} 
-.portfolio-category{
-        .title-text::after{
-            content: none;
-        }
+}
 
-        ul{
-            text-transform: uppercase;
-            text-align: center;
-            padding: 45px 20px 30px;
-            font-size: 14px;
-            font-family: $montserrat;
-            li{
-                padding: 12.5px 0;
-                cursor: pointer;
-                a{
-                    text-decoration: none;
-                    color: $grey;
-                    padding: 0 20px;
-                    &:focus{
-                        color: white;
-                        background-color: $turquoise;
-                    }
+.portfolio-category {
+    .title-text::after {
+        content: none;
+    }
+
+    ul {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 45px 20px 30px;
+        font-size: 14px;
+        font-family: $montserrat;
+
+        li {
+            padding: 12.5px 0;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: $grey;
+                padding: 0 20px;
+
+                &:focus {
+                    color: white;
+                    background-color: $turquoise;
                 }
             }
         }
     }
-    .portfolio-images{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .portfolio-img{
-            width: 100%;
-            margin-bottom: 20px;
-        }
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .portfolio-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.newletter {
+    text-align: center;
+    padding: 50px 0;
+    background-color: $turquoise;
+
+    .newletter-title {
+        text-transform: uppercase;
+        font-family: $montserrat;
     }
 
-    .newletter{
-        text-align: center;
-        padding: 50px 0;
-        background-color: $turquoise;
-        .newletter-title{
-            text-transform: uppercase;
-            font-family: $montserrat;
+    .newletter-together {
+        .newletter-title {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 30px;
         }
-        .newletter-together{
-            .newletter-title{
-                color: white;
-                font-size: 25px;
-                margin-bottom: 30px;
-            }
-           .button{
+
+        .button {
             background-color: white;
             color: $turquoise;
-        } 
         }
-
-        .newletter-form{
-            margin-top: 30px;
-            padding: 20px;
-            background-color: white;
-            .newletter-title{
-                color: $grey;
-                size: 20px;
-            }
-            .text{
-                margin-top: 10px;
-                line-height: 20px;
-                color: $very-light-gray;
-            }
-            .email{
-                padding-top: 10px;
-                display: flex;
-                justify-content: center;
-            }
-            .button{
-                flex-basis: 140px;
-                padding: 15px 0 ;
-                flex-shrink: 2;
-            }
-            .email-input{
-                flex-basis: 370px;
-                flex-shrink: 2;
-                color: $very-light-gray;
-                border: 1px solid $very-light-gray;
-                text-transform: uppercase;
-                padding-left: 20px;
-                font-family: $montserrat;
-                font-size: 14px;
-                &::placeholder{
-                    color: $very-light-gray;
-                }
-            }
-        }
-        
     }
 
-    .footer{
-        padding: 20px 0;
-        .footer-text{
+    .newletter-form {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: white;
+
+        .newletter-title {
+            color: $grey;
+            size: 20px;
+        }
+
+        .text {
+            margin-top: 10px;
+            line-height: 20px;
+            color: $very-light-gray;
+        }
+
+        .email {
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            flex-basis: 140px;
+            padding: 15px 0;
+            flex-shrink: 2;
+        }
+
+        .email-input {
+            flex-basis: 370px;
+            flex-shrink: 2;
+            color: $very-light-gray;
+            border: 1px solid $very-light-gray;
             text-transform: uppercase;
+            padding-left: 20px;
+            font-family: $montserrat;
             font-size: 14px;
-            color: $light-gray;
-            padding: 5px 0;
-        }
-        .footer-icons{
-            margin-top: 15px;
-            form{
-                text-align: center;
-                button{
-                    background-color: white;
-                    padding: 5px;
-                }
-            }
-            i{
-                background-color: white;
-                color: $light-gray;
+
+            &::placeholder {
+                color: $very-light-gray;
             }
         }
     }
+
+}
+
+.footer {
+    padding: 20px 0;
+
+    .footer-text {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $light-gray;
+        padding: 5px 0;
+    }
+
+    .footer-icons {
+        margin-top: 15px;
+
+        form {
+            text-align: center;
+
+            button {
+                background-color: white;
+                padding: 5px;
+            }
+        }
+
+        i {
+            background-color: white;
+            color: $light-gray;
+        }
+    }
+}
 
 @media(max-width: 767px) {
     .title {
@@ -616,15 +636,16 @@ body {
 
     }
 
-    .portfolio-category{
-        ul{
+    .portfolio-category {
+        ul {
             text-align: left;
             padding: 45px 10px;
-            li{
-                a{
+
+            li {
+                a {
                     padding: 0 10px;
 
-                    &:focus{
+                    &:focus {
                         margin-left: -20px;
                     }
                 }
@@ -632,54 +653,63 @@ body {
         }
     }
 
-    .portfolio-images{
-        justify-content:flex-start;
-        gap: 0; 
+    .portfolio-images {
+        justify-content: flex-start;
+        gap: 0;
         align-items: flex-start;
-        .portfolio-img{
+
+        .portfolio-img {
             margin-bottom: 30px;
-            &:last-child{
+
+            &:last-child {
                 margin: 0;
             }
         }
     }
 
-    .newletter{
-        .newletter-together{
+    .newletter {
+        .newletter-together {
             text-align: left;
-            .newletter-title{
-            font-size: 30px;
-            
-        }
-        .button{
+
+            .newletter-title {
+                font-size: 30px;
+
+            }
+
+            .button {
                 padding: 0;
                 width: 165px;
                 height: 50px;
             }
         }
-        
-        .newletter-form{
+
+        .newletter-form {
             margin: 0;
-            .newletter-title{
+
+            .newletter-title {
                 text-align: left;
                 font-size: 24px;
             }
-            .text{
+
+            .text {
                 text-align: left;
             }
-            .email{
+
+            .email {
                 padding-top: 30px;
             }
-            .button{
+
+            .button {
                 height: 50px;
             }
         }
     }
 
-    .footer{
-        .footer-icons{
+    .footer {
+        .footer-icons {
             margin: 0;
-            form{
+
+            form {
                 text-align: right;
             }
         }
@@ -703,12 +733,13 @@ body {
         }
     }
 
-    .portfolio-category{
-        ul{
+    .portfolio-category {
+        ul {
             text-align: left;
             padding: 45px 20px;
-            li{
-                a{
+
+            li {
+                a {
                     padding: 0 20px;
                 }
             }

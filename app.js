@@ -38,4 +38,4 @@ function showSlides(n) {
 //noLink
 function noLink(e) {
     e.preventDefault();
-  };
+};
