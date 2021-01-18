@@ -581,7 +581,7 @@ body {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    top: 50px;
+    top: 55px;
     background-color: #60606e;
   }
 
@@ -590,18 +590,18 @@ body {
     text-align: center;
   }
   .menu-items .first-level .second-level {
-    height: 0;
-    transition: 500ms ease-in-out;
-    transform: translateX(150%);
+    margin: 0 -7px;
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height 0.4s ease;
+    -moz-transition: max-height 0.4s ease;
+    transition: max-height 2s ease;
   }
   .menu-items .first-level .second-level li {
     background-color: #585866;
   }
   .menu-items .second-level.active-menu {
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
-    height: auto;
+    max-height: 500px;
   }
 }
 @media (min-width: 768px) {
