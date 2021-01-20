@@ -1,0 +1,232 @@
+.slider {
+  position: relative;
+  height: 850px;
+  background: url(images/slider.png) no-repeat;
+  background-size: cover;
+}
+
+.slider-info {
+  height: 750px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.slider-info .small-title {
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #60606e;
+  background-color: #7beec7;
+}
+.slider-info .big-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #60606e;
+  font-size: 38px;
+  border: #60606e solid 10px;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.slider-info p {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.slider-dots {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #60606e;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: #404051;
+}
+
+.history-img {
+  margin: 30px 0;
+  width: 100%;
+  align-self: center;
+}
+
+.history-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.history-info .button {
+  align-self: flex-end;
+}
+
+.choose-us .title {
+  margin-top: 100px;
+}
+.choose-us .text {
+  margin-bottom: 50px;
+}
+.choose-us .choose-us-img {
+  width: 100%;
+  margin: 30px 0;
+}
+.choose-us .choose-us-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: space-around;
+  height: 100%;
+}
+.choose-us .choose-us-info .choose-us-icon {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choose-us .choose-us-info .choose-us-info-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #60606e;
+  margin-bottom: 30px;
+}
+.choose-us .choose-us-info ul {
+  text-align: center;
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 14px;
+}
+.choose-us .choose-us-info ul li {
+  margin-top: 15px;
+}
+.choose-us .center-vertical {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio {
+  padding: 150px 0;
+}
+
+.portfolio-category .title-text::after {
+  content: none;
+}
+.portfolio-category ul {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 45px 20px 30px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.portfolio-category ul li {
+  padding: 12.5px 0;
+  cursor: pointer;
+}
+.portfolio-category ul li a {
+  text-decoration: none;
+  color: #60606e;
+  padding: 0 20px;
+}
+.portfolio-category ul li a:focus {
+  color: white;
+  background-color: #7beec7;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-images .portfolio-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .history {
+    position: relative;
+    z-index: 120;
+    margin-top: -240px;
+  }
+  .history .history-img {
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+  }
+
+  .choose-us .choose-us-img {
+    margin: 0;
+  }
+  .choose-us .choose-us-info {
+    gap: 0;
+  }
+  .choose-us .choose-us-info .choose-us-info-title {
+    text-align: left;
+  }
+  .choose-us .choose-us-info ul {
+    text-align: left;
+  }
+  .choose-us .choose-us-info .choose-us-icon {
+    justify-content: flex-start;
+  }
+
+  .portfolio-category ul {
+    text-align: left;
+    padding: 45px 10px;
+  }
+  .portfolio-category ul li a {
+    padding: 0 10px;
+  }
+  .portfolio-category ul li a:focus {
+    margin-left: -20px;
+  }
+
+  .portfolio-images {
+    justify-content: flex-start;
+    gap: 0;
+    align-items: flex-start;
+  }
+  .portfolio-images .portfolio-img {
+    margin-bottom: 30px;
+  }
+  .portfolio-images .portfolio-img:last-child {
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .history {
+    margin-top: -320px;
+  }
+
+  .choose-us .text {
+    margin-bottom: 100px;
+  }
+
+  .portfolio-category ul {
+    text-align: left;
+    padding: 45px 20px;
+  }
+  .portfolio-category ul li a {
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
