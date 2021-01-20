@@ -216,6 +216,30 @@ body {
   text-transform: uppercase;
 }
 
+.page-info {
+  height: 400px;
+  background: url(images/page-info.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.page-info .page-info-title {
+  color: #60606e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.page-info .page-info-map {
+  color: #60606e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
 .text {
   color: #60606e;
   font-size: 14px;
