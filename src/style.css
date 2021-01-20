@@ -491,16 +491,14 @@ body {
   color: #cdcdcd;
 }
 
-.footer {
-  padding: 20px 0;
-}
 .footer .footer-text {
+  padding: 25px 0;
   text-transform: uppercase;
   font-size: 14px;
   color: #999999;
-  padding: 5px 0;
 }
 .footer .footer-icons {
+  padding: 20px 0;
   margin-top: 15px;
 }
 .footer .footer-icons form {
