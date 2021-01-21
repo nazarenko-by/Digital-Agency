@@ -99,13 +99,14 @@ body {
 
 }
 
-.page-info{
+.page-info {
     height: 400px;
     background: url(images/page-info.png) no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    .page-info-title{
+
+    .page-info-title {
         color: $grey;
         font-family: $montserrat;
         font-size: 35px;
@@ -113,7 +114,8 @@ body {
         text-transform: uppercase;
         padding: 15px 0;
     }
-    .page-info-map{
+
+    .page-info-map {
         color: $grey;
         font-family: $montserrat;
         font-size: 14px;
@@ -251,6 +253,25 @@ body {
 
 }
 
+.social-network-icons {
+    padding: 20px 0;
+    margin-top: 15px;
+
+    form {
+        text-align: center;
+
+        button {
+            background-color: white;
+            padding: 5px;
+        }
+    }
+
+    i {
+        background-color: white;
+        color: $light-gray;
+    }
+}
+
 .footer {
     .footer-text {
         padding: 25px 0;
@@ -259,24 +280,6 @@ body {
         color: $light-gray;
     }
 
-    .footer-icons {
-        padding: 20px 0;
-        margin-top: 15px;
-
-        form {
-            text-align: center;
-
-            button {
-                background-color: white;
-                padding: 5px;
-            }
-        }
-
-        i {
-            background-color: white;
-            color: $light-gray;
-        }
-    }
 }
 
 @media(max-width: 767px) {
@@ -435,13 +438,11 @@ body {
         }
     }
 
-    .footer {
-        .footer-icons {
-            margin: 0;
+    .social-network-icons {
+        margin: 0;
 
-            form {
-                text-align: right;
-            }
+        form {
+            text-align: right;
         }
     }
 

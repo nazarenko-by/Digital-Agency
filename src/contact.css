@@ -1,0 +1,118 @@
+.contact-info {
+  padding: 150px 0;
+}
+
+.contact-info-form form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  max-height: 0;
+  transition: max-height 2s ease-in-out;
+  overflow: hidden;
+}
+.contact-info-form form.active {
+  padding-top: 5px;
+  max-height: 600px;
+  transition: max-height 2s ease-in;
+}
+.contact-info-form input, .contact-info-form textarea {
+  border: 1px solid #cccccc;
+  width: 100%;
+  background-color: #fefcf9;
+  color: #cccccc;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+.contact-info-form textarea {
+  outline: none;
+  resize: none;
+  height: 200px;
+}
+.contact-info-form input::placeholder, .contact-info-form textarea::placeholder {
+  color: #cccccc;
+}
+.contact-info-form .personal-info {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.placeholder {
+  position: relative;
+  width: 100%;
+}
+.placeholder span {
+  position: absolute;
+  color: #cccccc;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  left: 20px;
+  top: 22px;
+  transition: all 0.2s ease-in-out;
+}
+.placeholder span.active {
+  color: #7beec7;
+  font-size: 10px;
+  transform: translateY(-40%);
+  top: 0;
+  left: 5px;
+  background-color: #fefcf9c0;
+}
+
+.button.contact-us-button {
+  margin: 0 auto;
+  display: block;
+}
+
+.contact-info-data {
+  margin-top: 50px;
+}
+.contact-info-data .text {
+  text-align: left;
+  color: #999999;
+}
+.contact-info-data .social-network-icons form {
+  text-align: left;
+}
+
+.contact-info-data-title {
+  line-height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-style: 18px;
+  text-transform: uppercase;
+  color: #60606e;
+}
+
+.contact-info-data-email {
+  color: #999999;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.map {
+  margin-top: 5px;
+  height: 840px;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 767px) {
+  .map {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .contact-info-form .personal-info {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    padding: 50px 0;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
