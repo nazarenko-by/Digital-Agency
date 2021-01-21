@@ -21,4 +21,4 @@ modal.addEventListener("click", function(e){
     }
 })
 
-setTimeout(openModal, 5000)
+setTimeout(openModal, 30000)
