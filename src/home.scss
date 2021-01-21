@@ -163,19 +163,26 @@
         li {
             padding: 12.5px 0;
             cursor: pointer;
-
-            a {
-                text-decoration: none;
-                color: $grey;
-                padding: 0 20px;
-
-                &:focus {
-                    color: white;
-                    background-color: $turquoise;
-                }
-            }
         }
     }
+
+    .tab-title-item {
+        text-decoration: none;
+        color: $grey;
+        padding: 0 20px;
+
+        &:hover,
+        &.active {
+            color: white;
+            background-color: $turquoise;
+        }
+    }
+}
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
 }
 
 .portfolio-images {
@@ -186,6 +193,12 @@
     .portfolio-img {
         width: 100%;
         margin-bottom: 20px;
+    }
+    &.hide{
+        display: none;
+    }
+    &.show{
+        display: flex;
     }
 }
 
