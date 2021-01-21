@@ -29,12 +29,32 @@
     }
 }
 
+.services-benefits-img{
+    text-align: center;
+}
+
+.services-benefits-title{
+    text-transform: uppercase;
+    font-family: $montserrat;
+    font-size: 18px;
+    text-align: center;
+    color: $grey;
+}
+
 @media(max-width: 767px){
     .what-we-do-info{
         .what-we-do-info-items:last-child{
             .text:last-child{
                 margin-bottom: 40px;
             }
+        }
+    }
+}
+
+@media(max-width: 1023px){
+    .services-benefits{
+        .row{
+            flex-wrap: wrap;
         }
     }
 }
