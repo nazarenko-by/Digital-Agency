@@ -1,0 +1,53 @@
+.what-we-do {
+  padding: 50px 0;
+}
+.what-we-do .title {
+  margin-bottom: 40px;
+}
+
+.what-we-do-info > .text {
+  margin-bottom: 30px;
+}
+
+.what-we-do-info-items div::before {
+  content: url("images/what-we-do-icon.png");
+  margin-right: 10px;
+}
+
+.what-we-do-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.what-we-do-img img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .what-we-do-info .what-we-do-info-items:last-child .text:last-child {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .what-we-do-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .what-we-do-info > .text {
+    margin-bottom: 50px;
+  }
+  .what-we-do-info .text {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .what-we-do {
+    padding: 150px 0;
+  }
+  .what-we-do .title {
+    margin-bottom: 100px;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */
