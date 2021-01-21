@@ -356,11 +356,13 @@ body {
 .social-network-icons {
   padding: 20px 0;
   margin-top: 15px;
+  cursor: default;
 }
 .social-network-icons form {
   text-align: center;
 }
 .social-network-icons form button {
+  cursor: pointer;
   background-color: white;
   padding: 5px;
 }
