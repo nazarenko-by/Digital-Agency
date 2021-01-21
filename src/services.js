@@ -8,15 +8,15 @@ function openModal() {
     modal.classList.remove("hide")
 }
 
-function closeModal(){
+function closeModal() {
     modal.classList.add("hide")
     modal.classList.remove("show")
 }
 
 closeBtn.addEventListener("click", closeModal)
 
-modal.addEventListener("click", function(e){
-    if (e.target == modal){
+modal.addEventListener("click", function (e) {
+    if (e.target == modal) {
         closeModal();
     }
 })

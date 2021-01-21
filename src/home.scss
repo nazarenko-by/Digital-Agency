@@ -178,10 +178,12 @@
         }
     }
 }
-.hide{
+
+.hide {
     display: none;
 }
-.show{
+
+.show {
     display: flex;
 }
 
@@ -194,10 +196,12 @@
         width: 100%;
         margin-bottom: 20px;
     }
-    &.hide{
+
+    &.hide {
         display: none;
     }
-    &.show{
+
+    &.show {
         display: flex;
     }
 }

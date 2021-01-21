@@ -39,18 +39,18 @@ let tabsWrap = document.querySelector(".tab-title-items")
 let tabItem = document.querySelectorAll(".tab-title-item");
 let tabContents = document.querySelectorAll(".tab-content");
 
-function hideTabsContent(){
+function hideTabsContent() {
     tabContents.forEach(tab => {
         tab.classList.add("hide");
         tab.classList.remove("show")
-        
+
     })
     tabItem.forEach(item => {
         item.classList.remove("active")
     })
 }
 
-function showTabsContent(i = 0){
+function showTabsContent(i = 0) {
     tabContents[i].classList.add("show")
     tabContents[i].classList.remove("hide")
     tabItem[i].classList.add("active")
@@ -59,11 +59,11 @@ function showTabsContent(i = 0){
 hideTabsContent()
 showTabsContent()
 
-tabsWrap.addEventListener("click", function(e){
+tabsWrap.addEventListener("click", function (e) {
     let target = e.target;
-    if(target.classList.contains("tab-title-item")){
-        tabItem.forEach((item,i) => {
-            if(target == item){
+    if (target.classList.contains("tab-title-item")) {
+        tabItem.forEach((item, i) => {
+            if (target == item) {
                 hideTabsContent()
                 showTabsContent(i)
             }
